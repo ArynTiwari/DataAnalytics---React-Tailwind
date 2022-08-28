@@ -1,9 +1,22 @@
-import React from 'react'
-import './index.css';
+import React from "react";
+import Analytics from "./components/Analytics";
+import Cards from "./components/Cards";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import NewsLetter from "./components/NewsLetter";
+import "./index.css";
 const App = () => {
   return (
-    <div className='underline text-3xl'>App</div>
-  )
-}
+    <>
+      <Navbar />
+      <Hero />
+      <Analytics />
+      <NewsLetter />
+      <Cards />
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;
